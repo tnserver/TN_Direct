@@ -37,23 +37,23 @@
 
 			player.setup({
 			  sources: [ {
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['video.php']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "240p",
+					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "240p",
 					type: "video/mp4"
 					},{
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['video.php']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "360p",
+					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "360p",
 					type: "video/mp4"
 					},{
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['video.php']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "720p",
+					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "720p",
 					type: "video/mp4"
 					},{
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['video.php']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "1080p",
+					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "1080p",
 					type: "video/mp4"
 					}
 			  ],
 			  autostart: false,      
 			  playbackRateControls: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2],   
-			  abouttext: "Powered by Toon Nation", 
-			  	 	  aboutlink: "https://toon-nation.blogspot.com/",         
+			  abouttext: "WG Tutoriales", 
+			  	 	  aboutlink: "",         
  
 			  width: $(window).width(),
 		      height: $(window).height()	          
