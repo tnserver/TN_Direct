@@ -37,16 +37,16 @@
 
 			player.setup({
 			  sources: [ {
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "240p",
+					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['video.php']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "240p",
 					type: "video/mp4"
 					},{
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "360p",
+					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['video.php']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "360p",
 					type: "video/mp4"
 					},{
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "720p",
+					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['video.php']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "720p",
 					type: "video/mp4"
 					},{
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "1080p",
+					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['video.php']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "1080p",
 					type: "video/mp4"
 					}
 			  ],
