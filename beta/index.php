@@ -89,6 +89,8 @@ body {
 <hr>
 <center><a href="https://toon-nation.blogspot.com/" target="_blank" rel="noopener"><button class="btn"> Visit Toon-Nation</button></a> </center>
 <hr/>
+	   <center><a href="https://discord.gg/rbTXqdq" target="_blank" rel="noopener"><button class="btn">Join TN on Discord></a> </center>
+<hr/>
 
 
 
