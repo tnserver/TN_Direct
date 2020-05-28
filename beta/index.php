@@ -83,9 +83,9 @@ body {
 <center><h5><b>We Do Not Store/Host Any Content on Our Server.</b></h5></center>
 <center><h5><b>All Files are Stored on Google Drive</b></h5></center>
 <hr/>
-<center><h5><b>We do not upload any videos nor do we know who and where videos are coming from. We do not promote any illegal conduct of any kind. Links to the videos are submitted by users and managed by users</b></h5></center>
-<hr/>
-
+<center><h5><b>We do not upload any videos nor do we know who and where videos are coming from.</b></h5></center>
+<center><h5><b>Links to the videos are submitted by users and managed by users.</b></h5></center>
+<center><h5><b>We do not promote any illegal conduct of any kind.</b></h5></center>
 
 <center><a href="https://toon-nation.blogspot.com/" target="_blank" rel="noopener"><button class="btn"> Visit Toon-Nation</button></a> </center>
 <hr/>
