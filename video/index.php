@@ -69,7 +69,7 @@ body {
 <video class="js-player" poster="https://1.bp.blogspot.com/-0l3z4VE-2Y0/XleVO9SLVTI/AAAAAAAAAtI/mzXlhkGwSfkDbpqTYXtd-68eTL8g-kjzQCLcBGAsYHQ/s1600/ExtremeFootball.png">
 
 
-    <source src="https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc" type="video/mp4"/>
+    <source src="https://www.googleapis.com/drive/v3/files/<?=$_GET['link']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc" type="video/mp4"/>
 
   </video>
 
