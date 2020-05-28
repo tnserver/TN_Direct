@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>TN Server Extreme Football S01E12 [Toon-Nation]</title>
+<title>Beta Server - TN</title>
 <link rel="icon" type="image/png" href=""/>
 <meta name="robots" content="noindex"/>
 
@@ -72,7 +72,7 @@ body {
 <video class="js-player" poster="">
 
 
-    <source src="https://www.googleapis.com/drive/v3/files/<?=$_GET['NWtBL05lNGhPdnhIWnNLeFN2TG1mZEo1MU93enM1K1luSndtUVdQNlpvclp3WnZqd3NnalhLbEpmUURCSVpWVQ']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc" type="video/mp4"/>
+    <source src="https://www.googleapis.com/drive/v3/files/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc" type="video/mp4"/>
 
   </video>
 
