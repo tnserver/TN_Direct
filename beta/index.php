@@ -69,7 +69,7 @@ body {
 <center><h4><b>Watch Online</b></h4></center>
 <hr/>
 
-<video class="js-player" poster="">
+<video class="js-player" poster="https://lh3.googleusercontent.com/d/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>">
 
 
     <source src="https://www.googleapis.com/drive/v3/files/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc" type="video/mp4"/>
