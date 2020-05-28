@@ -72,7 +72,7 @@ body {
 <video class="js-player" poster="https://lh3.googleusercontent.com/d/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>">
 
 
-    <source src="https://www.googleapis.com/drive/v3/files/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc" type="video/mp4"/>
+    <source src="https://www.googleapis.com/drive/v3/files/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>?alt=media&key=AIzaSyCP2-urwiL1AUDbv0_KHHSv_JKfJXdrKXk" type="video/mp4"/>
 
   </video>
 
