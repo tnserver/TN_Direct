@@ -74,7 +74,9 @@ body {
 
     <source src="https://www.googleapis.com/drive/v3/files/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>?alt=media&key=AIzaSyCP2-urwiL1AUDbv0_KHHSv_JKfJXdrKXk" type="video/mp4"/>
 
-  </video>
+    <source src="https://gddl.herokuapp.com/dl/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>" type="video/mp4"/>	
+  
+	</video>
 
 
    <div>
