@@ -67,7 +67,7 @@ body {
 <center><h4><b>Watch Online</b></h4></center>
 <hr/>
 
-  <div class="resp-container"> <iframe class="resp-iframe" src="https://sharer.pw/file/<?=$_GET['id']?>" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe> </div>
+  <div class="resp-container"> <iframe class="resp-iframe" src="https://sharer.pw/player/<?=$_GET['id']?>" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe> </div>
 
 
 
