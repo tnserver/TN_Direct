@@ -67,7 +67,7 @@ body {
 
 
 <hr/>
-  <center><a href="https://tn-server.herokuapp.com/player/<?=$_GET['id']?>"><button class="btn"><i class="fa fa-play"></i> Play Online</button></a></center>
+  <center><a href="https://tn-server.herokuapp.com/player/?id=<?=$_GET['id']?>"><button class="btn"><i class="fa fa-play"></i> Play Online</button></a></center>
 <hr/>
 <center><a href="https://sharer.pw/file/<?=$_GET['id']?>"><button class="btn"><i class="fa fa-download"></i> Download</button></a></center>
 <hr/>
