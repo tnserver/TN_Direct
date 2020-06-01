@@ -72,11 +72,11 @@ body {
 <video class="js-player" poster="">
 
 
-    <source src="https://direct.bbcsdrive.space/file/<?=$_GET['id']?>--?dl=3" type="video/mp4"/>
+    <source src="https://direct.bbcsdrive.space/file/<?=$_GET['file']?>--?dl=3" type="video/mp4"/>
 
   </video>
 <hr/>
-  <center><a href="https://direct.bbcsdrive.space/file/<?=$_GET['id']?>--?dl=3"><button class="btn"><i class="fa fa-download"></i> Download</button></a></center>
+  <center><a href="https://direct.bbcsdrive.space/file/<?=$_GET['file']?>--?dl=3"><button class="btn"><i class="fa fa-download"></i> Download</button></a></center>
 
 
    <div>
