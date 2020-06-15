@@ -1,71 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
- 
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>GoogleAPI</title>
 
-    <!-- Styles -->
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-    <!-- Favicons -->
-<link rel="shortcut icon" href="https://images.vexels.com/media/users/3/137425/isolated/preview/f2ea1ded4d037633f687ee389a571086-logotipo-de-youtube-icono-by-vexels.png" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-	<!-- Core Funcs -->
-  	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  	<script src="https://ssl.p.jwpcdn.com/player/v/8.6.2/jwplayer.js"></script>
-	<!-- END Core Funcs -->
-	<style>
-		* {
-		    margin: 0px;
-		}
-		html {
-		    overflow: hidden;
-		}
-	</style>	    
-  </head>
+    <style type="text/css">
+    	
+    	.tombol {
+    		border:1px solid #1a7bff;
+    		width: 100%;
+    	}
+    	.tombol2 {
+    		border:1px solid #1a7bff;
+    		width: 100%;margin-top: 4px;
+    		margin-bottom: 4px;
+    	}
+    	.header-video {
+    		padding-top: 8px;
+            padding-bottom: 8px;
+    	}
 
-<body>
-	<div id="encrpyt">
-		
+        body {
+            overflow:hidden;
+        }
+        #sticky-footer2 {
+                width:120px;
+        flex-shrink: none;
+        position:fixed;
+        top:0;
+        right:0;
+        text-align:left;
+        margin-right: -105px;
+        margin-top: 0px;
+    }
+
+    </style>
+
+    <title></title>
+  
+		</head>
+  <body style="background-color:black" onload="playVideo()">
+
+	<div id="iframe">
 	</div>
-	<!-- Core Streaming -->
-	<script>
-			jwplayer.key = "cLGMn8T20tGvW+0eXPhq4NNmLB57TrscPjd1IyJF84o="; 			
 
-			var player = jwplayer('encrpyt');
+	<div id="sticky-footer2" onmouseover="tampilButton(this)" onmouseout="normalButton(this)">
+		<div class="header-video text-light bg-dark"><span onclick="buka()">  GDrive</span><span style="margin-top:-4px" onclick="tutup()" class="btn btn-sm btn-secondary"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+		<div style="background-color: white;padding: 4px" onclick="buka()">
+			<button onclick="gantiSource(video1)" class="btn btn-sm btn-outline-primary tombol">Watch</button>
+			<button onclick="gantiSource(video2)" class="btn btn-sm btn-outline-primary tombol" style="margin-bottom: 4px">Download</button>
+			
+		</div>
+        
+	</div>
 
-			player.setup({
-			  sources: [ {
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "240p",
-					type: "video/mp4"
-					},{
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "360p",
-					type: "video/mp4"
-					},{
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "720p",
-					type: "video/mp4"
-					},{
-					file: "https://www.googleapis.com/drive/v3/files/<?=$_GET['id']?>?alt=media&key=AIzaSyBFHimHWDyLOtcNJjA268KwRLhsBuckUxc", label: "1080p",
-					type: "video/mp4"
-					}
-			  ],
-			  autostart: false,      
-			  playbackRateControls: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2],   
-			  abouttext: "WG Tutoriales", 
-			  	 	  aboutlink: "",         
- 
-			  width: $(window).width(),
-		      height: $(window).height()	          
-			});
+	<script type="text/javascript">
+		
+		var video1 = 'https://gdriveplayer.me/embed2.php?link=<?=$_GET['link']?>';
+    	var video2 = 'https://gdriveplayer.me/download.php?link=<?=$_GET['link']?>';
+    	
+    	
+    	function playVideo() {
+    		document.getElementById("iframe").innerHTML='<iframe id="full-screen-me" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true" sandboxscrolling="no" sandbox="allow-scripts allow-same-origin" wmode="transparent" src="' + video1 + '" allowfullscreen></iframe>';
+            window.onresize = autoResizeDiv;
+            autoResizeDiv();
+    	}
 
-			$(document).ready(function() {
-				$(window).resize(function(){
-					jwplayer().resize($(window).width(),$(window).height())
-				})
-			})
+		function gantiSource(server) {
+			if(server === undefined || server == null || server.length <= 0 || server <= false) {
+				alert("Sorry, Server not available!");
+			}
+			else {
+				document.getElementById("full-screen-me").src=server;
+			}
+		}
+
+		function tampilButton(x) {
+            x.style.right = '105px';
+            
+        }
+
+        function normalButton(x) {
+            x.style.right = '0px';
+            
+        }
+
+        function tutup() {
+            document.getElementById("sticky-footer2").style.right='0px';
+            
+        }
+        
+        function buka() {
+            document.getElementById("sticky-footer2").style.right='105px';
+            
+        }
+
+        function autoResizeDiv()
+        {
+            document.getElementById('full-screen-me').style.height = window.innerHeight +'px';
+        }
+        window.onresize = autoResizeDiv;
+        autoResizeDiv();
 
 	</script>
-	<!-- END Core Streaming -->
-</body>
-</html>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+</body></html>
