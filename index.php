@@ -52,7 +52,7 @@
 		<div class="header-video text-light bg-dark"><span onclick="buka()">  GDrive</span><span style="margin-top:-4px" onclick="tutup()" class="btn btn-sm btn-secondary"><i class="fa fa-times" aria-hidden="true"></i></span></div>
 		<div style="background-color: white;padding: 4px" onclick="buka()">
 			<button onclick="gantiSource(video1)" class="btn btn-sm btn-outline-primary tombol">Watch</button>
-			<button onclick="gantiSource(video2)" class="btn btn-sm btn-outline-primary tombol" style="margin-bottom: 4px">Download</button>
+			
 			
 		</div>
         
@@ -61,7 +61,7 @@
 	<script type="text/javascript">
 		
 		var video1 = 'https://gdriveplayer.me/embed2.php?link=<?=$_GET['link']?>';
-    	var video2 = 'https://gdriveplayer.me/download.php?link=<?=$_GET['link']?>';
+    	
     	
     	
     	function playVideo() {
