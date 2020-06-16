@@ -1,118 +1,96 @@
 
-<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <!-- Required meta tags -->
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-<title>TN Server</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-    <style type="text/css">
-    	
-    	.tombol {
-    		border:1px solid #1a7bff;
-    		width: 100%;
-    	}
-    	.tombol2 {
-    		border:1px solid #1a7bff;
-    		width: 100%;margin-top: 4px;
-    		margin-bottom: 4px;
-    	}
-    	.header-video {
-    		padding-top: 8px;
-            padding-bottom: 8px;
-    	}
+<!DOCTYPE html><html><head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>TN SERVER</title>
+<link rel="icon" type="image/png" href="/img/favicon.png"/>
+<meta name="robots" content="noindex"/>
 
-        body {
-            overflow:hidden;
-        }
-        #sticky-footer2 {
-                width:120px;
-        flex-shrink: none;
-        position:fixed;
-        top:0;
-        right:0;
-        text-align:left;
-        margin-right: -105px;
-        margin-top: 0px;
-    }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.1/lumen/bootstrap.min.css"/>
 
-    </style>
 
-    <title></title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8=" crossorigin="anonymous"></script>
+
+<style>
+body {
+    font-family: 'Varela Round';font-size: 10px;
+}
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+</style>
+
+
+
   
-		</head>
-  <body style="background-color:black" onload="playVideo()">
+</head>
+<body>
+<section class="newsletter_area">
+<div class="container mt-3">
+<div class="row justify-content-center">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<header class="w3-display-container w3-content w3-wide" style="max-width:1480px;" id="home">
+  <center><img class="w3-image" src="https://1.bp.blogspot.com/-xi4PHr3Y5to/Xejv8oRWEGI/AAAAAAAAATM/vg1UJo050BQR0XIV7T0EkPmru0kMb96ywCLcBGAsYHQ/s1600/Toon-Nation.jpg" alt="Toon_Nation" width="315" height="auto"/></center>
+  <hr/>
 
-	<div id="iframe">
-	</div>
+<center><h4><b>Watch Online</b></h4></center>
+<hr/>
 
-	<div id="sticky-footer2" onmouseover="tampilButton(this)" onmouseout="normalButton(this)">
-		<div class="header-video text-light bg-dark"><span onclick="buka()">  GDrive</span><span style="margin-top:-4px" onclick="tutup()" class="btn btn-sm btn-secondary"><i class="fa fa-times" aria-hidden="true"></i></span></div>
-		<div style="background-color: white;padding: 4px" onclick="buka()">
-			<button onclick="gantiSource(video1)" class="btn btn-sm btn-outline-primary tombol">Watch</button>
-			
-			
-		</div>
-        
-	</div>
+  <div class="resp-container"> <iframe class="resp-iframe" src="https://gdriveplayer.me/embed2.php?link=<?=$_GET['link']?>" gesture="media" allow="encrypted-media" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" sandboxscrolling="no" sandbox="allow-scripts allow-same-origin"></iframe> </div>
 
-	<script type="text/javascript">
-		
-		var video1 = 'https://gdriveplayer.me/embed2.php?link=<?=$_GET['link']?>';
-    	
-    	
-    	
-    	function playVideo() {
-    		document.getElementById("iframe").innerHTML='<iframe id="full-screen-me" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true" sandboxscrolling="no" sandbox="allow-scripts allow-same-origin" wmode="transparent" src="' + video1 + '" allowfullscreen></iframe>';
-            window.onresize = autoResizeDiv;
-            autoResizeDiv();
-    	}
 
-		function gantiSource(server) {
-			if(server === undefined || server == null || server.length <= 0 || server <= false) {
-				alert("Sorry, Server not available!");
-			}
-			else {
-				document.getElementById("full-screen-me").src=server;
-			}
-		}
 
-		function tampilButton(x) {
-            x.style.right = '105px';
-            
-        }
-
-        function normalButton(x) {
-            x.style.right = '0px';
-            
-        }
-
-        function tutup() {
-            document.getElementById("sticky-footer2").style.right='0px';
-            
-        }
-        
-        function buka() {
-            document.getElementById("sticky-footer2").style.right='105px';
-            
-        }
-
-        function autoResizeDiv()
-        {
-            document.getElementById('full-screen-me').style.height = window.innerHeight +'px';
-        }
-        window.onresize = autoResizeDiv;
-        autoResizeDiv();
-
-	</script>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   
+   
+   <div>
+   <hr/>
+<center><h5><b>We Do Not Store/Host Any Content on Our Server</b></h5></center>
+<center><h5><b>All Files are Stored on Google Drive</b></h5></center>
+<hr/>
+<center><h5><b>Nor do we know who and where videos are coming from</b></h5></center>
+<center><h5><b>Links to the videos are submitted by users and managed by users</b></h5></center>
+<hr>
+<center><a href="https://toon-nation.blogspot.com/" target="_blank" rel="noopener"><button class="btn"> Visit Toon-Nation</button></a> </center>
+<hr>
 
-</body></html>
+
+</div></div></header></div></div></div></div></div></section></body></html>
+
+
+
+
+
+
+
