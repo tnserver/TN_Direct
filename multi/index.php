@@ -1,11 +1,8 @@
-
-
-
 <!DOCTYPE html><html><head>
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Multi Server - TN</title>
+<title>TN Multi Quality Server</title>
 <link rel="icon" type="image/png" href="/img/favicon.png"/>
 <meta name="robots" content="noindex"/>
 
@@ -63,28 +60,13 @@ body {
 <div class="row">
 <div class="col-lg-12 col-md-12 col-sm-12">
 <header class="w3-display-container w3-content w3-wide" style="max-width:1480px;" id="home">
-  <center><img class="w3-image" src="https://1.bp.blogspot.com/-xi4PHr3Y5to/Xejv8oRWEGI/AAAAAAAAATM/vg1UJo050BQR0XIV7T0EkPmru0kMb96ywCLcBGAsYHQ/s1600/Toon-Nation.jpg" alt="Toon_Nation" width="315" height="auto"/></center>
-  <hr/>
+  <center><img class="w3-image" src="https://1.bp.blogspot.com/-xi4PHr3Y5to/Xejv8oRWEGI/AAAAAAAAATM/vg1UJo050BQR0XIV7T0EkPmru0kMb96ywCLcBGAsYHQ/s1600/Toon-Nation.jpg" alt="Toon-Nation" width="315" height="auto"/></center>
+  <hr>
+<center><h4>Multi Quality Server</h4><Center>
+<center><h4>Supports 1080p, 720p, 480p and 360p</h4><Center>
 
-
-<center><h4><b>Watch Online [Multi Server]</b></h4></center>
 <hr/>
-
-  <div class="resp-container"> <iframe class="resp-iframe" src="https://gdrive-player.com/<?=$_GET['id']?>" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe> </div>
-
-
-
- 
-
-   <div>
-   <div>
-   <hr/>
-<center><h5><b>We Do Not Store/Host Any Content on Our Server.</b></h5></center>
-<center><h5><b>All Files are Stored on Google Drive.</b></h5></center>
+  <center><a href="https://s2.gdrive-player.com/video/<?=$_GET['id']?>"><button class="btn"><i class="fa fa-play"></i> Play Online</button></a></center>
 <hr/>
-<center><a href="https://toon-nation.blogspot.com/" target="_blank" rel="noopener"><button class="btn"> Visit Toon-Nation</button></a> </center>
-
-
-
-</div></div></header></div></div></div></div></div></section></body></html>
-
+<center><a href="https://s2.gdrive-player.com/download/<?=$_GET['id']?>"><button class="btn"><i class="fa fa-download"></i> Download</button></a></center>
+<hr/>
