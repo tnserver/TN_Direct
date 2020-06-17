@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Beta Server - TN</title>
+<title>Direct Server - TN</title>
 <link rel="icon" type="image/png" href=""/>
 <meta name="robots" content="noindex"/>
 
