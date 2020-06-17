@@ -70,7 +70,7 @@ body {
 <center><h4><b>Watch Online</b></h4></center>
 <hr/>
 
-<video class="js-player" poster="">
+<video class="js-player" poster="https://extraimage.com/images/2020/06/17/PicsArt_04-12-02.23.49.jpg">
 
 
     <source src="https://direct.bbcsdrive.space/file/<?=$_GET['file']?>--?dl=3" type="video/mp4"/>
