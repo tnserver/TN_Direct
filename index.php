@@ -68,7 +68,7 @@ body {
 <center><h4><b>Watch Online</b></h4></center>
 <hr/>
 
-  <div class="resp-container"> <iframe class="resp-iframe" src="https://gdriveplayer.me/embed2.php?link=<?=$_GET['link']?>" gesture="media" allow="encrypted-media" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" sandboxscrolling="no" sandbox="allow-scripts allow-same-origin"></iframe> </div>
+  <div class="resp-container"> <iframe class="resp-iframe" src="https://gdriveplayer.me/embed2.php?link=<?=$_GET['link']?>" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe> </div>
 
 
 
