@@ -1,18 +1,115 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Beta Server - TN</title>
-	<meta name="robots" content="noindex">
-	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/8.8.6/jwplayer.js"></script>
-	<script type="text/javascript">jwplayer.key="cLGMn8T20tGvW+0eXPhq4NNmLB57TrscPjd1IyJF84o=";</script>
-	<style type="text/css" media="screen">html,body{padding:0;margin:0;height:100%}#apicodes-player{width:100%!important;height:100%!important;overflow:hidden;background-color:#000}.apicodes-container{position:relative;width:100%;height:0;padding-bottom:56.25%;background-color:#000;}.apicodes-video{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}.apicodes-frame{position:absolute;height:50px;right:8px;margin-top:8px;width:50px;z-index:1;background:url(./assets/images/logo.png);background-repeat:no-repeat;background-size:50px 50px;}</style>
-</head>
-<body>
 
-<div id="apicodes-player"></div><script type="text/javascript">eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('n 2=1s("1-2");2.D({K:[{"q":"A","Z":"g\\/Y","7":"5://W.V.6/c/U/T/e?S=R&Q=P-O"}],N:"16:9",L:"M",B:"C",E:F,G:"H",I:"5://m.1.6/k-j-h-J.10",l:{X:"#12",13:16,1r:0,1q:"1p",1o:"1n"},1m:[{7:"5://m.1.6/k.j.h.1l",q:"1k",11:"l","1j":1i}]});2.1h("./1g/1f/o.1e","1d 1c",f(){n r=1b.1a(2.19()["7"],"18");r.17()},"o");2.p("15",f(){$("#1-2").t("<3 4=\\"1-u\\"> <8 z=\\"5://c.y.6/7/d/e/v\\" w=\\"b%\\" x=\\"b%\\" s=\\"0\\" a=\\"a\\" 4=\\"1-g\\"></8> <3 4=\\"1-i\\"></3></3>")});2.p("14",f(){$("#1-2").t("<3 4=\\"1-u\\"> <8 z=\\"5://c.y.6/7/d/e/v\\" w=\\"b%\\" x=\\"b%\\" s=\\"0\\" a=\\"a\\" 4=\\"1-g\\"></8> <3 4=\\"1-i\\"></3></3>")});',62,91,'|apicodes|player|div|class|https|com|file|iframe||allowfullscreen|100|drive||<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>|function|video|baby|frame|bossg|the|captions|demo|var|download|on|label|win|frameborder|html|container|preview|width|height|google|src|HD|primary|html5|setup|autostart|false|preload|auto|image|poster|sources|startparam|start|aspectratio|urwiL1AUDbv0_KHHSv_JKfJXdrKXk|AIzaSyCP2|key|media|alt|files|v3|googleapis|www|color|mp4|type|jpg|kind|f3f368|fontSize|error|setupError||focus|_blank|getPlaylistItem|open|window|Video|Download|svg|images|assets|addButton|true|default|English|srt|tracks|raised|edgeStyle|Helvetica|fontfamily|backgroundOpacity|jwplayer'.split('|'),0,{}))
-</script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Required meta tags -->
+    <title>Beta Server - TN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+    	
+    	.tombol {
+    		border:1px solid #1a7bff;
+    		width: 100%;
+    	}
+    	.tombol2 {
+    		border:1px solid #1a7bff;
+    		width: 100%;margin-top: 4px;
+    		margin-bottom: 4px;
+    	}
+    	.header-video {
+    		padding-top: 8px;
+            padding-bottom: 8px;
+    	}
+
+        body {
+            overflow:hidden;
+        }
+        #sticky-footer2 {
+                width:120px;
+        flex-shrink: none;
+        position:fixed;
+        top:0;
+        right:0;
+        text-align:left;
+        margin-right: -105px;
+        margin-top: 0px;
+    }
+
+    </style>
+
+    <title></title>
+  </head>
+  <body style="background-color:black" onload="playVideo()">
+
+	<div id="iframe">
+	</div>
+
+	<div id="sticky-footer2" onmouseover="tampilButton(this)" onmouseout="normalButton(this)">
+		<div class="header-video text-light bg-dark"><span onclick="buka()">  SERVER </span><span style="margin-top:-4px" onclick="tutup()" class="btn btn-sm btn-secondary"><i class="fa fa-times" aria-hidden="true"></i></span></div>
+		<div style="background-color: white;padding: 4px" onclick="buka()">
+			<button onclick="gantiSource(video1)" class="btn btn-sm btn-outline-primary tombol">Watch</button>
+			
+        
+	</div>
+
+	<script type="text/javascript">
+		
+		var video1 = 'https://tn-server.herokuapp.com/beta/player/8mM5YuwCygI4oBC9tCcH=<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>';
+    	
+    	function playVideo() {
+    		document.getElementById("iframe").innerHTML='<iframe id="full-screen-me" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" frameborder="0" wmode="transparent" src="' + video1 + '" allowfullscreen></iframe>';
+            window.onresize = autoResizeDiv;
+            autoResizeDiv();
+    	}
+
+		function gantiSource(server) {
+			if(server === undefined || server == null || server.length <= 0 || server <= false) {
+				alert("Sorry, Server not available!");
+			}
+			else {
+				document.getElementById("full-screen-me").src=server;
+			}
+		}
+
+		function tampilButton(x) {
+            x.style.right = '105px';
+            
+        }
+
+        function normalButton(x) {
+            x.style.right = '0px';
+            
+        }
+
+        function tutup() {
+            document.getElementById("sticky-footer2").style.right='0px';
+            
+        }
+        
+        function buka() {
+            document.getElementById("sticky-footer2").style.right='105px';
+            
+        }
+
+        function autoResizeDiv()
+        {
+            document.getElementById('full-screen-me').style.height = window.innerHeight +'px';
+        }
+        window.onresize = autoResizeDiv;
+        autoResizeDiv();
+
+	</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
