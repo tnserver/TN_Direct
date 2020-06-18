@@ -1,100 +1,18 @@
 
-
-<!DOCTYPE html><html><head>
-<meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Beta Server - TN</title>
-<link rel="icon" type="image/png" href=""/>
-<meta name="robots" content="noindex"/>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<link href="https://fonts.googleapis.com/css?family=Varela+Round&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.1/lumen/bootstrap.min.css"/>
-
-<link href="https://cdn.plyr.io/3.5.6/plyr.css" rel="stylesheet"/>
-
-  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha256-xaF9RpdtRxzwYMWg4ldJoyPWqyDPCRD0Cv7YEEe6Ie8=" crossorigin="anonymous"></script>
-
-<script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
-<script>
-      document.addEventListener('DOMContentLoaded', () => {
-          const player = Plyr.setup('.js-player');
-      });
-      
-      
-      
-  </script>
-
-<style>
-body {
-    font-family: 'Varela Round';font-size: 10px;
-}
-/* Style buttons */
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
-}
-
-
-</style>
-
-
-
-  
-
-		
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beta Server - TN</title>
+	<meta name="robots" content="noindex">
+	<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/8.8.6/jwplayer.js"></script>
+	<script type="text/javascript">jwplayer.key="cLGMn8T20tGvW+0eXPhq4NNmLB57TrscPjd1IyJF84o=";</script>
+	<style type="text/css" media="screen">html,body{padding:0;margin:0;height:100%}#apicodes-player{width:100%!important;height:100%!important;overflow:hidden;background-color:#000}.apicodes-container{position:relative;width:100%;height:0;padding-bottom:56.25%;background-color:#000;}.apicodes-video{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}.apicodes-frame{position:absolute;height:50px;right:8px;margin-top:8px;width:50px;z-index:1;background:url(./assets/images/logo.png);background-repeat:no-repeat;background-size:50px 50px;}</style>
+</head>
 <body>
-<section class="newsletter_area">
-<div class="container mt-3">
-<div class="row justify-content-center">
-<div class="container">
-<div class="row">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<header class="w3-display-container w3-content w3-wide" style="max-width:1480px;" id="home">
-  <center><img class="w3-image" src="https://1.bp.blogspot.com/-xi4PHr3Y5to/Xejv8oRWEGI/AAAAAAAAATM/vg1UJo050BQR0XIV7T0EkPmru0kMb96ywCLcBGAsYHQ/s1600/Toon-Nation.jpg" alt="Toon_Nation" width="280" height="auto"/></center>
- 
-<hr/>
-<center><h4><b>Watch Online</b></h4></center>
-<hr/>
 
-<video class="js-player" poster="https://lh3.googleusercontent.com/d/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>">
-
-
-    <source src="https://www.googleapis.com/drive/v3/files/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>?alt=media&key=AIzaSyCP2-urwiL1AUDbv0_KHHSv_JKfJXdrKXk" type="video/mp4"/>
-
-    <source src="https://gddl.herokuapp.com/dl/<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>" type="video/webm"/>	
-  
-	</video>
-
-
-   <div>
-   <div>
-   <hr/>
-<center><h5><b>We Do Not Store/Host Any Content on Our Server.</b></h5></center>
-<center><h5><b>All Files are Stored on Google Drive</b></h5></center>
-<hr/>
-<center><h5><b>We do not upload any videos nor do we know who and where videos are coming from.</b></h5></center>
-<center><h5><b>Links to the videos are submitted by users and managed by users.</b></h5></center>
-<center><h5><b>We do not promote any illegal conduct of any kind.</b></h5></center>
-<hr>
-<center><a href="https://toon-nation.blogspot.com/" target="_blank" rel="noopener"><button class="btn"> Visit Toon-Nation</button></a> </center>
-<hr/>
-
-
-
-
-
-
-</div></div></header></div></div></div></div></div></section></body></html>
+<div id="apicodes-player"></div><script type="text/javascript">eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('n 2=1s("1-2");2.D({K:[{"q":"A","Z":"g\\/Y","7":"5://W.V.6/c/U/T/e?S=R&Q=P-O"}],N:"16:9",L:"M",B:"C",E:F,G:"H",I:"5://m.1.6/k-j-h-J.10",l:{X:"#12",13:16,1r:0,1q:"1p",1o:"1n"},1m:[{7:"5://m.1.6/k.j.h.1l",q:"1k",11:"l","1j":1i}]});2.1h("./1g/1f/o.1e","1d 1c",f(){n r=1b.1a(2.19()["7"],"18");r.17()},"o");2.p("15",f(){$("#1-2").t("<3 4=\\"1-u\\"> <8 z=\\"5://c.y.6/7/d/e/v\\" w=\\"b%\\" x=\\"b%\\" s=\\"0\\" a=\\"a\\" 4=\\"1-g\\"></8> <3 4=\\"1-i\\"></3></3>")});2.p("14",f(){$("#1-2").t("<3 4=\\"1-u\\"> <8 z=\\"5://c.y.6/7/d/e/v\\" w=\\"b%\\" x=\\"b%\\" s=\\"0\\" a=\\"a\\" 4=\\"1-g\\"></8> <3 4=\\"1-i\\"></3></3>")});',62,91,'|apicodes|player|div|class|https|com|file|iframe||allowfullscreen|100|drive||<?=$_GET['8mM5YuwCygI4oBC9tCcH']?>|function|video|baby|frame|bossg|the|captions|demo|var|download|on|label|win|frameborder|html|container|preview|width|height|google|src|HD|primary|html5|setup|autostart|false|preload|auto|image|poster|sources|startparam|start|aspectratio|urwiL1AUDbv0_KHHSv_JKfJXdrKXk|AIzaSyCP2|key|media|alt|files|v3|googleapis|www|color|mp4|type|jpg|kind|f3f368|fontSize|error|setupError||focus|_blank|getPlaylistItem|open|window|Video|Download|svg|images|assets|addButton|true|default|English|srt|tracks|raised|edgeStyle|Helvetica|fontfamily|backgroundOpacity|jwplayer'.split('|'),0,{}))
+</script>
+</body>
+</html>
